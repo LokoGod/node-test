@@ -16,7 +16,6 @@ const {readFile, writeFile} = require('fs').promises;
  }
 
  start()
-
  
 // const getText = (path) => {
 //     return new Promise((resolve, reject) => {

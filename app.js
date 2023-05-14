@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
     // res.end(text)
     const filestream = fs.createReadStreamm(("./content/big.txt", 'utf-8'));
     filestream.on('open', () => {
-         filestream.pipe();
+         filestream.pipe(res);
     })
     filestream.on('error', (err) => {
         res.end(err);
